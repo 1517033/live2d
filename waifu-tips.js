@@ -221,6 +221,7 @@ function loadWidget(config) {
 	}
 
 	async function loadRandModel() {
+		alert(111)
 		const modelId = localStorage.getItem("modelId"),
 			modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (useCDN) {
@@ -242,6 +243,7 @@ function loadWidget(config) {
 	}
 
 	async function loadOtherModel() {
+		alert(222);
 		let modelId = localStorage.getItem("modelId");
 		if (useCDN) {
 			if (!modelList) await loadModelList();
