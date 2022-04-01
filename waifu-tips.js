@@ -224,6 +224,7 @@ function loadWidget(config) {
 		const modelId = localStorage.getItem("modelId"),
 			modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (useCDN) {
+			alert('useCDN');
 			if (!modelList) await loadModelList();
 			const target = randomSelection(modelList.models[modelId]);
 			loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
